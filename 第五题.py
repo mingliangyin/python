@@ -1,0 +1,213 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jun 21 14:39:54 2018
+函数：
+变量(生命周期)
+全局变量，局部变量(函数内)
+练习五:实现练习四，
+1.使用函数写出来。定义函数，输出每一天6:00,12:00,18:00的天气信息
+2.打印折线图,使用字符串的*号操作
+10----------
+5-----
+@author: Administrator
+"""
+a=3
+
+def msg():#定义一个函数  def 函数名(): 代码
+    b=4
+    des='晴天'
+    week='星期六'
+    print('今天温度是：{}'.format(b))
+    print('今天天气是：{}'.format(des))
+    print('今天{}'.format(week))
+#NameError: name 'b' is not defined
+print(b)
+msg()
+msg()
+msg()
+#x**2  #x的平方的函数
+#3**2=9#3的平方的函数
+def msg(b,des,week):
+    print('今天温度是：{}'.format(b))
+    print('今天天气是：{}'.format(des))
+    print('今天{}'.format(week))
+msg(28,'晴','星期四')
+msg(30,'多云','星期五')
+msg(21,'小雨','星期六')
+"""
+def 函数名称(变量,...):
+    指令的集合
+"""
+
+def abc(city,dt_txt,temp,temp_min,temp_max,pressure,description):
+    print('{}{}的温度为:{},最低温度为:{},最高温度为:{},气压为:{},天气情况为:{}'
+          .format(city,dt_txt,temp,temp_min,temp_max,pressure,description))
+hour=0
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a1=data['list'][hour]['main']['temp_max']
+
+hour=2
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a2=data['list'][hour]['main']['temp_max']
+hour=6
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a3=data['list'][hour]['main']['temp_max']
+hour=8
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a4=data['list'][hour]['main']['temp_max']
+hour=10
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a5=data['list'][hour]['main']['temp_max']
+hour=14
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a6=data['list'][hour]['main']['temp_max']
+hour=16
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a7=data['list'][hour]['main']['temp_max']
+hour=18
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a8=data['list'][hour]['main']['temp_max']
+hour=22
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a9=data['list'][hour]['main']['temp_max']
+hour=24
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a10=data['list'][hour]['main']['temp_max']
+hour=26
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a11=data['list'][hour]['main']['temp_max']
+hour=30
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a12=data['list'][hour]['main']['temp_max']
+hour=32
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a13=data['list'][hour]['main']['temp_max']
+hour=34
+abc(data['city']['name'],
+    data['list'][hour]['dt_txt'],
+    data['list'][hour]['main']['temp'],
+    data['list'][hour]['main']['temp_min'],
+    data['list'][hour]['main']['temp_max'],
+    data['list'][hour]['main']['pressure'],
+    data['list'][hour]['weather'][0]['description'])
+a14=data['list'][hour]['main']['temp_max']
+print(int(a1)*'-')
+print(int(a2)*'-')
+print(int(a3)*'-')
+print(int(a4)*'-')
+print(int(a5)*'-')
+print(int(a6)*'-')
+print(int(a7)*'-')
+print(int(a8)*'-')
+print(int(a9)*'-')
+print(int(a10)*'-')
+print(int(a11)*'-')
+print(int(a12)*'-')
+print(int(a13)*'-')
+print(int(a14)*'-')
+
+ls=[]
+ls.append(a1)
+ls.append(a2)
+ls.append(a3)
+ls.append(a4)
+ls.append(a5)
+ls.append(a6)
+ls.append(a7)
+ls.append(a8)
+ls.append(a9)
+ls.append(a10)
+ls.append(a11)
+ls.append(a12)
+ls.append(a13)
+ls.append(a14)
+ls=sorted(ls)
+ls
+
+ls1=reversed(ls) 
+print(ls1)
+for i in ls1:
+    print(i)
+
+
+
+
+
